@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">kaihatsu00</string>
+    <string name="text">name@domain.com</string>
+    <string name="text1">18歳</string>
+    <string name="text2">160cm</string>
+    <string name="text3">55kg</string>
+    <string name="text4">男</string>
+    <string name="text5">設定</string>
+    <string name="text6">メールアドレス</string>
+    <string name="text7">年齢</string>
+    <string name="text8">身長</string>
+    <string name="text9">体重</string>
+    <string name="text10">性別</string>
+    <string name="text11">【身体活動レベルの設定】</string>
+    <string name="text12">レベル1(低い)</string>
+    <string name="text13">レベル2(普通)</string>
+    <string name="text14">レベル3(高い)</string>
 </resources>

@@ -7,25 +7,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text1"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text2"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text3"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="254dp" />
+
     <EditText
         android:id="@+id/editTextText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="男"
+        android:text="@string/text4"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="306dp" />
 
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="50pt"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="55kg"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:text="@string/text5"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/mail"
@@ -33,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="278dp"
-        android:text="メールアドレス"
+        android:text="@string/text6"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/age"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,24 +86,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/setting"
-        android:layout_width="50pt"
-        android:layout_height="wrap_content"
-        android:text="設定"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="31dp" />
-
-    <TextView
         android:id="@+id/age"
         android:layout_width="48pt"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="266dp"
-        android:text="年齢"
+        android:text="@string/text7"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,12 +101,12 @@
         app:layout_constraintTop_toBottomOf="@+id/mail" />
 
     <TextView
-        android:id="@+id/sex"
+        android:id="@+id/height"
         android:layout_width="48pt"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="262dp"
-        android:text="身長"
+        android:text="@string/text8"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,11 +115,11 @@
         app:layout_constraintTop_toBottomOf="@+id/age" />
 
     <TextView
-        android:id="@+id/sex"
-        android:layout_width="48pt"
+        android:id="@+id/weight"
+        android:layout_width="50pt"
         android:layout_height="wrap_content"
         android:layout_marginEnd="262dp"
-        android:text="体重"
+        android:text="@string/text9"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +132,7 @@
         android:layout_width="48pt"
         android:layout_height="wrap_content"
         android:layout_marginEnd="262dp"
-        android:text="性別"
+        android:text="@string/text10"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,25 +147,25 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="226dp"
-        android:text="【身体活動レベルの設定】"
+        android:text="@string/text11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sex" />
 
     <RadioButton
-        android:id="@+id/levelButton3"
+        android:id="@+id/levelButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
-        android:text="レベル1(低い)"
+        android:text="@string/text12"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="414dp" />
 
     <RadioButton
-        android:id="@+id/levelButton3"
+        android:id="@+id/levelButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="レベル2(普通)"
+        android:text="@string/text13"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="414dp" />
 
@@ -141,39 +174,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
-        android:text="レベル3(高い)"
+        android:text="@string/text14"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="414dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="name@domain.com"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="100dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="18歳"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="145dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="160cm"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="199dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -181,7 +184,9 @@
         android:layout_height="192dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/levelgraph"
+        app:srcCompat="@drawable/levelgraph1"
         tools:layout_editor_absoluteY="462dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
