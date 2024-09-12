@@ -15,22 +15,20 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 以下を追加
+        setContentView(R.layout.activity_main)
+
         val fab: View = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Fabを押しました！", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
-
-
+        }
 
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
-
         }
 
         // TextViewの参照を取得
@@ -42,18 +40,11 @@ class MainActivity : AppCompatActivity() {
         // TextViewに日付を設定
         dateTextView.text = currentDate
     }
+
     // 現在の日付をフォーマットする関数
     fun getCurrentDate(): String {
-        val dateFormat = SimpleDateFormat("yyyy/MM/dd ", Locale.getDefault())
+        val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
         val date = Date()
         return dateFormat.format(date)
     }
-
-
 }
-
-    private fun getCurrentDate(): CharSequence? {
-
-    }
-
- 
