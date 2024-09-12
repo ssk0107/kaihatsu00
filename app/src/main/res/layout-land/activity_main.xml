@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
@@ -187,6 +186,24 @@
         app:srcCompat="@drawable/levelgraph1"
         tools:layout_editor_absoluteY="462dp" />
 
+<!--    <Button-->
+<!--        android:id="@+id/backbutton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#17CBDC"-->
+<!--        android:text="@string/text15"-->
+<!--        tools:layout_editor_absoluteX="7dp"-->
+<!--        tools:layout_editor_absoluteY="9dp" />-->
 
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#17CBDC"
+            android:text="@string/text15"
+            android:onClick="goBack"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="9dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
