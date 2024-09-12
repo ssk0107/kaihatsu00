@@ -1,4 +1,5 @@
-package com.example.kaihatsu00
+package com.example.kaihatsu00;
+
 
 import android.os.Bundle
 import android.view.View
@@ -8,9 +9,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 import android.widget.TextView
+import com.example.kaihatsu00.R
 import com.google.android.material.snackbar.Snackbar
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
