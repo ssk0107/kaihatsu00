@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">kaihatsu00</string>
     <string name="text">name@domain.com</string>
-    <string name="text1">18歳</string>
-    <string name="text2">160cm</string>
-    <string name="text3">55kg</string>
+    <string name="text1">18</string>
+    <string name="text2">160</string>
+    <string name="text3">55</string>
     <string name="text4">男</string>
     <string name="text5">設定</string>
     <string name="text6">メールアドレス</string>

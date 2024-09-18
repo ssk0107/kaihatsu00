@@ -206,4 +206,28 @@
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="9dp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:text="歳"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:text="cm"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:text="kg"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="263dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
