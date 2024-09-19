@@ -11,182 +11,119 @@
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/text"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="100dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="132dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editage"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/text1"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="150dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="209dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editheight"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/text2"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="199dp" />
-
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="280dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editweight"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/text3"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="357dp" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/seibetsu"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60sp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/text4"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="306dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="433dp" />
 
     <TextView
         android:id="@+id/setting"
-        android:layout_width="50pt"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="77dp"
         android:text="@string/text5"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="278dp"
+        android:id="@+id/name"
+        android:layout_width="130sp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="266dp"
         android:text="@string/text6"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/age"
+        android:textAlignment="center"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="132dp" />
 
     <TextView
         android:id="@+id/age"
-        android:layout_width="48pt"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="266dp"
         android:text="@string/text7"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail" />
+        tools:layout_editor_absoluteY="209dp" />
 
     <TextView
         android:id="@+id/height"
-        android:layout_width="48pt"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="262dp"
         android:text="@string/text8"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age" />
+        tools:layout_editor_absoluteY="280dp" />
 
-    <TextView
-        android:id="@+id/weight"
-        android:layout_width="50pt"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="262dp"
-        android:text="@string/text9"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="263dp" />
-
-    <TextView
-        android:id="@+id/sex"
-        android:layout_width="48pt"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="262dp"
-        android:text="@string/text10"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="314dp" />
-
-    <TextView
-        android:id="@+id/sinntailevel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="226dp"
-        android:text="@string/text11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sex" />
-
-    <RadioButton
-        android:id="@+id/levelButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:text="@string/text12"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="414dp" />
-
-    <RadioButton
-        android:id="@+id/levelButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text13"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="414dp" />
-
-    <RadioButton
-        android:id="@+id/levelButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:text="@string/text14"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="414dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="287dp"
-        android:layout_height="192dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/levelgraph1"
-        tools:layout_editor_absoluteY="462dp" />
-
-<!--    <Button-->
+    <!--    <Button-->
 <!--        android:id="@+id/backbutton"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -196,38 +133,131 @@
 <!--        tools:layout_editor_absoluteY="9dp" />-->
 
 
-        <Button
-            android:id="@+id/backbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#17CBDC"
-            android:text="@string/text15"
-            android:onClick="goBack"
-            tools:layout_editor_absoluteX="7dp"
-            tools:layout_editor_absoluteY="9dp" />
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="262dp"
+        android:text="@string/text9"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="357dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
+        android:id="@+id/sex"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="262dp"
+        android:text="@string/text10"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <TextView
+        android:id="@+id/sinntailevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="226dp"
+        android:text="@string/text11"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <RadioButton
+        android:id="@+id/levelButton1"
+        android:layout_width="230dp"
+        android:layout_height="103dp"
+        android:text="@string/text12"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <RadioButton
+        android:id="@+id/levelButton2"
+        android:layout_width="230dp"
+        android:layout_height="103dp"
+        android:text="@string/text13"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/levelButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <RadioButton
+        android:id="@+id/levelButton3"
+        android:layout_width="230dp"
+        android:layout_height="103dp"
+        android:text="@string/text14"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="540dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="683dp"
+        android:layout_height="535dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/levelgraph1"
+        tools:layout_editor_absoluteY="700dp" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#17CBDC"
+        android:onClick="goBack"
+        android:text="@string/text15"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <TextView
+        android:id="@+id/agetoshi"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
         android:text="歳"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="164dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="209dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
+        android:id="@+id/cm"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
         android:text="cm"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="212dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="280dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
+        android:id="@+id/kg"
+        android:layout_width="79dp"
+        android:layout_height="64dp"
         android:text="kg"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="263dp" />
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="357dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
