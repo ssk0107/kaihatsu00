@@ -41,7 +41,33 @@
             app:useCompatPadding="false" />
 
 
+        <LinearLayout
+            android:layout_width="293dp"
+            android:layout_height="570dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="104dp">
 
+                <Button
+                    android:id="@+id/btnInsert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insert User" />
+
+                <Button
+                    android:id="@+id/btnShowUsers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show All Users" />
+
+                <TextView
+                    android:id="@+id/tvUsers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Users will be shown here" />
+        </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
