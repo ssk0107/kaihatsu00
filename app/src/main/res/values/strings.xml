@@ -16,4 +16,7 @@
     <string name="text13">レベル2(普通)</string>
     <string name="text14">レベル3(高い)</string>
     <string name="text15">←</string>
+    <string name="text16">歳</string>
+    <string name="text17">cm</string>
+    <string name="text18">kg</string>
 </resources>
