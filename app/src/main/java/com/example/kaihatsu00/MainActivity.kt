@@ -1,6 +1,8 @@
 package com.example.kaihatsu00
 
 import DBHelper
+import User
+import UserAdapter
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,6 +11,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import java.text.SimpleDateFormat
 import java.util.*
@@ -16,7 +20,8 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     lateinit var dbHelper: DBHelper
-    lateinit var tvUsers: TextView
+    lateinit var recyclerViewUsers: RecyclerView
+    lateinit var btnShowUsers: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,28 +46,19 @@ class MainActivity : AppCompatActivity() {
         val currentDate = getCurrentDate()
         dateTextView.text = currentDate
 
-
-
-
-
-
         // DBHelper インスタンスを作成
         dbHelper = DBHelper(this)
 
-        // TextView や Button を取得
-        tvUsers = findViewById(R.id.tvUsers)
-        val btnInsert = findViewById<Button>(R.id.btnInsert)
-        val btnShowUsers = findViewById<Button>(R.id.btnShowUsers)
+        // RecyclerView を取得
+        recyclerViewUsers = findViewById(R.id.recyclerViewUsers)
 
-        // ユーザーを挿入する処理
-        btnInsert.setOnClickListener {
-            dbHelper.insertUser("John Doe", 25)
-        }
+        // ボタンを取得
+        btnShowUsers = findViewById(R.id.btnShowUsers)
 
         // ユーザー情報を表示する処理
         btnShowUsers.setOnClickListener {
             val cursor = dbHelper.getAllUsers()
-            val users = StringBuilder()
+            val users = mutableListOf<User>()
 
             if (cursor.moveToFirst()) {
                 do {
@@ -70,17 +66,21 @@ class MainActivity : AppCompatActivity() {
                     val name = cursor.getString(1)
                     val age = cursor.getInt(2)
 
-                    // ユーザー情報をログに表示
-                    Log.d("MainActivity", "ID: $id, Name: $name, Age: $age")
-
-                    // ユーザー情報を users に追加
-                    users.append("ID: $id, Name: $name, Age: $age\n")
+                    // ユーザー情報をリストに追加
+                    users.add(User(id, name, age))
                 } while (cursor.moveToNext())
             }
             cursor.close()
 
-            // TextViewにユーザー情報を表示
-            tvUsers.text = users.toString()
+            // RecyclerViewにユーザー情報を表示
+            val adapter = UserAdapter(users) { user ->
+                // ユーザーの削除処理
+                dbHelper.deleteUser(user.id)
+                // 更新後のユーザーリストを再取得
+                btnShowUsers.performClick()
+            }
+            recyclerViewUsers.layoutManager = LinearLayoutManager(this)
+            recyclerViewUsers.adapter = adapter
         }
     }
 
